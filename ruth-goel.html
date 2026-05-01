@@ -1,0 +1,1050 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>보아스는 왜 룻과 결혼했는가 — 룻기 4장 질문과 대답</title>
+  <meta property="og:title" content="보아스는 왜 룻과 결혼했는가" />
+  <meta property="og:description" content="고엘 제도, 계대결혼, 헤세드 — 룻기 4장의 법적·신학적 구조를 완전 해부한다" />
+  <meta property="og:type" content="article" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;600;700;900&family=Noto+Sans+KR:wght@300;400;500&display=swap" rel="stylesheet" />
+
+  <style>
+    :root {
+      --bg: #0d0d0d;
+      --bg2: #141414;
+      --bg3: #1a1a1a;
+      --border: #2a2a2a;
+      --accent: #c9a96e;
+      --accent2: #e8c98a;
+      --text: #e0d8cc;
+      --text-muted: #8a8070;
+      --red: #c0392b;
+      --green: #27ae60;
+      --blue: #2980b9;
+      --serif: 'Noto Serif KR', serif;
+      --sans: 'Noto Sans KR', sans-serif;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: var(--sans);
+      font-size: 16px;
+      line-height: 1.8;
+    }
+
+    /* ── HEADER ── */
+    header {
+      background: var(--bg2);
+      border-bottom: 1px solid var(--border);
+      padding: 60px 24px 48px;
+      text-align: center;
+    }
+
+    .series-tag {
+      display: inline-block;
+      font-family: var(--sans);
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--accent);
+      border: 1px solid var(--accent);
+      padding: 4px 14px;
+      margin-bottom: 28px;
+    }
+
+    header h1 {
+      font-family: var(--serif);
+      font-size: clamp(26px, 5vw, 46px);
+      font-weight: 900;
+      line-height: 1.3;
+      color: #f0e8d8;
+      max-width: 720px;
+      margin: 0 auto 20px;
+    }
+
+    header h1 em {
+      color: var(--accent2);
+      font-style: normal;
+    }
+
+    .subtitle {
+      font-family: var(--sans);
+      font-size: 14px;
+      color: var(--text-muted);
+      max-width: 600px;
+      margin: 0 auto 32px;
+      font-weight: 300;
+      line-height: 1.7;
+    }
+
+    .meta {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      font-size: 12px;
+      color: var(--text-muted);
+      letter-spacing: 0.05em;
+    }
+
+    .meta span::before { content: ''; }
+
+    /* ── SCROLL NAV ── */
+    .toc {
+      background: var(--bg3);
+      border-top: 2px solid var(--accent);
+      border-bottom: 1px solid var(--border);
+      padding: 20px 24px;
+      display: flex;
+      justify-content: center;
+      gap: 8px 24px;
+      flex-wrap: wrap;
+    }
+
+    .toc a {
+      font-size: 12px;
+      color: var(--text-muted);
+      text-decoration: none;
+      letter-spacing: 0.05em;
+      transition: color 0.2s;
+    }
+
+    .toc a:hover { color: var(--accent2); }
+
+    /* ── MAIN LAYOUT ── */
+    main {
+      max-width: 780px;
+      margin: 0 auto;
+      padding: 0 24px 80px;
+    }
+
+    /* ── SECTION ── */
+    .section {
+      margin-top: 64px;
+      padding-top: 40px;
+      border-top: 1px solid var(--border);
+    }
+
+    .section:first-child { border-top: none; }
+
+    .section-header {
+      display: flex;
+      align-items: flex-start;
+      gap: 20px;
+      margin-bottom: 28px;
+    }
+
+    .section-num {
+      font-family: var(--serif);
+      font-size: 48px;
+      font-weight: 900;
+      color: var(--border);
+      line-height: 1;
+      flex-shrink: 0;
+      margin-top: 4px;
+    }
+
+    .section-title-group h2 {
+      font-family: var(--serif);
+      font-size: clamp(20px, 3vw, 26px);
+      font-weight: 700;
+      color: #f0e8d8;
+      line-height: 1.3;
+      margin-bottom: 6px;
+    }
+
+    .section-title-group .question-label {
+      font-size: 12px;
+      color: var(--accent);
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+    }
+
+    /* QUESTION BLOCK */
+    .question-block {
+      background: var(--bg3);
+      border-left: 3px solid var(--accent);
+      padding: 20px 24px;
+      margin-bottom: 28px;
+      font-family: var(--serif);
+      font-size: 15px;
+      color: var(--accent2);
+      line-height: 1.7;
+    }
+
+    .question-block::before {
+      content: 'Q. ';
+      font-weight: 700;
+    }
+
+    /* BODY TEXT */
+    p {
+      font-family: var(--sans);
+      font-size: 15px;
+      line-height: 1.95;
+      color: var(--text);
+      margin-bottom: 18px;
+    }
+
+    /* ANALOGY BOX (비유박스) */
+    .analogy-box {
+      background: linear-gradient(135deg, #1a1610 0%, #1e1a14 100%);
+      border: 1px solid #3a3020;
+      border-left: 4px solid var(--accent);
+      padding: 24px 28px;
+      margin: 28px 0;
+      position: relative;
+    }
+
+    .analogy-box::before {
+      content: '비유';
+      position: absolute;
+      top: -10px;
+      left: 20px;
+      background: var(--accent);
+      color: #0d0d0d;
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      padding: 2px 10px;
+    }
+
+    .analogy-box p { font-style: italic; color: #c8b88a; margin-bottom: 0; }
+
+    /* CALLOUT */
+    .callout {
+      background: #0f1820;
+      border: 1px solid #1a3050;
+      border-left: 4px solid #2980b9;
+      padding: 20px 24px;
+      margin: 28px 0;
+    }
+
+    .callout.warning {
+      background: #1a0f0f;
+      border-color: #3a1515;
+      border-left-color: var(--red);
+    }
+
+    .callout.success {
+      background: #0f1a0f;
+      border-color: #1a3a1a;
+      border-left-color: var(--green);
+    }
+
+    .callout-label {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      margin-bottom: 8px;
+      color: #2980b9;
+    }
+
+    .callout.warning .callout-label { color: var(--red); }
+    .callout.success .callout-label { color: var(--green); }
+
+    .callout p { margin-bottom: 0; font-size: 14px; }
+
+    /* SCRIPTURE */
+    .scripture {
+      background: #141414;
+      border-left: 3px solid #444;
+      padding: 16px 22px;
+      margin: 20px 0;
+      font-family: var(--serif);
+      font-size: 14px;
+      color: #c0b89a;
+      font-style: italic;
+      line-height: 1.8;
+    }
+
+    .scripture cite {
+      display: block;
+      font-style: normal;
+      font-size: 12px;
+      color: var(--text-muted);
+      margin-top: 8px;
+    }
+
+    /* COMPARISON TABLE */
+    .table-wrap { overflow-x: auto; margin: 28px 0; }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 14px;
+    }
+
+    thead tr {
+      background: var(--bg3);
+      border-bottom: 2px solid var(--accent);
+    }
+
+    th {
+      font-family: var(--sans);
+      font-weight: 600;
+      color: var(--accent2);
+      padding: 12px 16px;
+      text-align: left;
+      font-size: 12px;
+      letter-spacing: 0.05em;
+    }
+
+    td {
+      padding: 11px 16px;
+      border-bottom: 1px solid var(--border);
+      color: var(--text);
+      vertical-align: top;
+    }
+
+    tr:hover td { background: rgba(201,169,110,0.04); }
+
+    /* FLOW DIAGRAM */
+    .flow {
+      background: var(--bg3);
+      border: 1px solid var(--border);
+      padding: 28px 24px;
+      margin: 28px 0;
+      font-family: 'Courier New', monospace;
+      font-size: 13px;
+      color: #9a9a7a;
+      line-height: 2;
+    }
+
+    .flow .flow-highlight { color: var(--accent2); font-weight: bold; }
+    .flow .flow-arrow { color: var(--text-muted); }
+    .flow .flow-result { color: var(--red); }
+
+    /* HEBREW */
+    .hebrew {
+      font-size: 18px;
+      color: var(--accent2);
+      font-family: var(--serif);
+      margin: 0 4px;
+    }
+
+    /* CORRECTION BOX */
+    .correction {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2px;
+      margin: 28px 0;
+    }
+
+    @media (max-width: 600px) {
+      .correction { grid-template-columns: 1fr; }
+    }
+
+    .correction-before, .correction-after {
+      padding: 18px 20px;
+      font-size: 14px;
+      line-height: 1.7;
+    }
+
+    .correction-before {
+      background: #1a0f0f;
+      border-top: 3px solid var(--red);
+    }
+
+    .correction-after {
+      background: #0f1a0f;
+      border-top: 3px solid var(--green);
+    }
+
+    .correction-label {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+
+    .correction-before .correction-label { color: var(--red); }
+    .correction-after .correction-label { color: var(--green); }
+
+    /* FINAL THEOLOGY BOX */
+    .theology-box {
+      background: linear-gradient(160deg, #14100a 0%, #1a1408 100%);
+      border: 1px solid #3a2e18;
+      padding: 36px 32px;
+      margin: 40px 0;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .theology-box::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 2px;
+      background: linear-gradient(90deg, transparent, var(--accent), transparent);
+    }
+
+    .theology-box blockquote {
+      font-family: var(--serif);
+      font-size: clamp(16px, 2.5vw, 20px);
+      line-height: 1.7;
+      color: var(--accent2);
+      font-style: italic;
+      margin-bottom: 16px;
+    }
+
+    .theology-box .attribution {
+      font-size: 12px;
+      color: var(--text-muted);
+      letter-spacing: 0.1em;
+    }
+
+    /* LINEAGE */
+    .lineage {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 0;
+      margin: 24px 0;
+      font-family: var(--serif);
+      font-size: 14px;
+    }
+
+    .lineage-node {
+      padding: 8px 14px;
+      border: 1px solid var(--border);
+      background: var(--bg3);
+      color: var(--text);
+    }
+
+    .lineage-node.highlight {
+      border-color: var(--accent);
+      color: var(--accent2);
+      background: #1a1408;
+    }
+
+    .lineage-arrow {
+      color: var(--text-muted);
+      padding: 0 4px;
+      font-size: 12px;
+    }
+
+    /* SUMMARY */
+    .summary-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 16px;
+      margin: 28px 0;
+    }
+
+    .summary-card {
+      background: var(--bg3);
+      border: 1px solid var(--border);
+      border-top: 2px solid var(--accent);
+      padding: 20px 18px;
+    }
+
+    .summary-card h4 {
+      font-family: var(--serif);
+      font-size: 14px;
+      color: var(--accent2);
+      margin-bottom: 8px;
+    }
+
+    .summary-card p {
+      font-size: 13px;
+      color: var(--text-muted);
+      margin: 0;
+      line-height: 1.7;
+    }
+
+    /* FOOTER */
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 32px 24px;
+      text-align: center;
+      font-size: 12px;
+      color: var(--text-muted);
+      line-height: 2;
+    }
+
+    footer a { color: var(--accent); text-decoration: none; }
+
+    strong { color: var(--accent2); }
+    em { color: #a09070; font-style: italic; }
+  </style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+  <div class="series-tag">룻기 4장 · 질문과 대답</div>
+  <h1>보아스는 왜 <em>룻</em>과 결혼했는가<br>— 고엘 제도의 법적·신학적 구조</h1>
+  <p class="subtitle">
+    오벳은 말론의 아들인가? 계대결혼과 고엘 제도는 다른가?<br>
+    더 가까운 친족은 왜 거절했는가? 개역개정 번역은 왜 흐린가?<br>
+    룻기 4장을 둘러싼 6가지 질문에 정면으로 답한다.
+  </p>
+  <div class="meta">
+    <span>룻기 4장</span>
+    <span>·</span>
+    <span>히브리어 원문 분석 포함</span>
+    <span>·</span>
+    <span>번역 비교 포함</span>
+  </div>
+</header>
+
+<!-- TOC -->
+<nav class="toc">
+  <a href="#q1">① 오벳은 말론의 아들인가</a>
+  <a href="#q2">② 고엘 제도란 무엇인가</a>
+  <a href="#q3">③ 결혼의 법적 근거</a>
+  <a href="#q4">④ 거절 이유의 정확한 구조</a>
+  <a href="#q5">⑤ 룻 4:5 텍스트 문제</a>
+  <a href="#q6">⑥ 한글 번역의 문제</a>
+</nav>
+
+<main>
+
+  <!-- Q1 -->
+  <section class="section" id="q1">
+    <div class="section-header">
+      <div class="section-num">01</div>
+      <div class="section-title-group">
+        <div class="question-label">Question 1</div>
+        <h2>오벳은 말론의 아들이어야 하는 것 아닌가?</h2>
+      </div>
+    </div>
+
+    <div class="question-block">
+      룻을 취한 보아스는 고엘 제도를 따라 결혼했는데, 그렇다면 그의 아들 오벳은 룻의 첫째 남편 말론의 아들이 되어야 하는 것 아닌가?
+    </div>
+
+    <p>
+      많은 사람들이 헷갈리는 지점입니다. 결론부터 말하면, <strong>오벳은 보아스의 아들입니다.</strong> 말론의 아들이 아닙니다.
+    </p>
+
+    <div class="callout warning">
+      <div class="callout-label">핵심 구분</div>
+      <p>고엘 제도(레 25장)와 계대결혼(신 25장)은 <strong>다른 제도</strong>입니다. 이 둘을 혼동하면 룻기 전체의 논리가 무너집니다.</p>
+    </div>
+
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th></th>
+            <th>계대결혼 (신 25장)</th>
+            <th>고엘 제도 (레 25장)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>대상</td>
+            <td>형제 한정</td>
+            <td>씨족 전체</td>
+          </tr>
+          <tr>
+            <td>목적</td>
+            <td>죽은 형의 이름 보존</td>
+            <td>가문 재산·혈통 구속</td>
+          </tr>
+          <tr>
+            <td>결혼 의무</td>
+            <td>명시적</td>
+            <td>비명시적</td>
+          </tr>
+          <tr>
+            <td>아들 귀속</td>
+            <td>죽은 형의 아들로 등록</td>
+            <td>규정 없음</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p>
+      보아스는 말론의 형제가 아니었습니다. <strong>먼 친족</strong>이었습니다. 따라서 계대결혼의 당사자가 아니고, 아들의 법적 부친을 말론으로 이전해야 할 의무가 없습니다.
+    </p>
+
+    <p>
+      보아스 본인도 룻 4:10에서 말합니다: "말론의 이름이 끊어지지 않게 하겠다." 이것은 <strong>사회적·언약적 명예 보존의 선언</strong>이지, 오벳을 말론의 아들로 법적 등록하겠다는 뜻이 아닙니다.
+    </p>
+
+    <div class="scripture">
+      살몬은 보아스를 낳고, 보아스는 룻에게서 <strong>오벳을 낳고</strong>, 오벳은 이새를 낳고, 이새는 다윗 왕을 낳으니라
+      <cite>— 마태복음 1:5-6 (성령의 감동으로 기록된 메시아 족보)</cite>
+    </div>
+
+    <p>
+      메시아 족보가 오벳을 <strong>보아스의 아들</strong>로 명시합니다. 만약 말론의 아들이었다면 말론이 족보에 기록됐을 것입니다. 하나님은 오벳을 보아스 → 이새 → 다윗 → 예수 그리스도로 이어지는 선 위에 확정하셨습니다.
+    </p>
+  </section>
+
+  <!-- Q2 -->
+  <section class="section" id="q2">
+    <div class="section-header">
+      <div class="section-num">02</div>
+      <div class="section-title-group">
+        <div class="question-label">Question 2</div>
+        <h2>고엘 제도란 정확히 무엇인가?</h2>
+      </div>
+    </div>
+
+    <div class="question-block">
+      고엘 제도에 대해 더 구체적으로 설명해달라.
+    </div>
+
+    <p>
+      히브리어 <span class="hebrew">גָּאַל</span> (가알)은 "되찾다, 구속하다, 속량하다"는 의미입니다. 고엘(<span class="hebrew">גֹּאֵל</span>)은 단순한 친척 호칭이 아닙니다. <strong>구속할 의무와 권리를 가진 자</strong>입니다. 이 단어는 동사에서 나온 명사이므로, 고엘이 된다는 것은 곧 <strong>행동</strong>을 전제합니다.
+    </p>
+
+    <h3 style="font-family:var(--serif);font-size:18px;color:#f0e8d8;margin:28px 0 16px;">고엘의 세 가지 의무</h3>
+
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>의무</th>
+            <th>근거</th>
+            <th>내용</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>토지 구속</strong></td>
+            <td>레 25:25</td>
+            <td>가난으로 팔린 가문의 토지를 되사야 함</td>
+          </tr>
+          <tr>
+            <td><strong>몸값 구속</strong></td>
+            <td>레 25:47-49</td>
+            <td>빚으로 종이 된 친족의 자유를 삼</td>
+          </tr>
+          <tr>
+            <td><strong>피의 복수</strong></td>
+            <td>민 35:19</td>
+            <td>억울히 죽은 친족을 위해 살인자를 처형</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p>
+      고엘의 자격은 혈연(같은 씨족), 근친 순서(가장 가까운 자 우선), 실제 이행 능력, 그리고 의지입니다. 단, 의무이지만 <strong>거절도 가능</strong>했습니다. 거절 시에는 신발을 벗어 건네는 법적 의식으로 권리를 이양했습니다(신 25:9).
+    </p>
+
+    <div class="analogy-box">
+      <p>
+        고대 근동에서 신발은 "땅을 밟을 권리"의 상징이었습니다. 신발을 건넨다는 것은 "내가 밟아야 할 이 땅의 권리를 당신에게 넘긴다"는 법적 양도 행위였습니다. 룻 4:7-8의 신발 의식은 바로 이 의미입니다.
+      </p>
+    </div>
+
+    <div class="callout success">
+      <div class="callout-label">신학적 핵심</div>
+      <p>고엘 제도의 배경에는 <strong>"하나님이 이스라엘의 고엘이시다"</strong>는 전제가 있습니다. 출애굽 자체가 하나님의 고엘 행위였습니다. 욥 19:25 — "내 구속자(고엘)가 살아 계신다" — 는 이 연장선에서 터져 나온 고백입니다.</p>
+    </div>
+
+    <div class="flow">
+      <div><span class="flow-highlight">하나님</span><span class="flow-arrow"> → </span>이스라엘의 고엘 (출애굽)</div>
+      <div><span class="flow-highlight">보아스</span><span class="flow-arrow"> → </span>나오미·룻의 고엘 (룻기)</div>
+      <div><span class="flow-highlight">그리스도</span><span class="flow-arrow"> → </span>온 인류의 고엘 (십자가)</div>
+    </div>
+  </section>
+
+  <!-- Q3 -->
+  <section class="section" id="q3">
+    <div class="section-header">
+      <div class="section-num">03</div>
+      <div class="section-title-group">
+        <div class="question-label">Question 3</div>
+        <h2>보아스와 룻의 결혼은 어떤 제도에 근거하는가?</h2>
+      </div>
+    </div>
+
+    <div class="question-block">
+      그렇다면 룻과의 결혼은 어떻게 봐야 할까?
+    </div>
+
+    <div class="callout">
+      <div class="callout-label">솔직한 전제</div>
+      <p>성경 학자들 사이에서도 이 결혼의 법적 근거가 정확히 어떤 제도냐를 놓고 의견이 갈립니다. 룻기의 결혼은 <strong>어느 한 율법 조항에 딱 맞아떨어지지 않습니다.</strong></p>
+    </div>
+
+    <div class="flow">
+      <div>고엘 의무 (토지 구속)</div>
+      <div style="color:#5a5a3a">      +</div>
+      <div>계대결혼의 정신 (혈통·이름 보존)</div>
+      <div class="flow-arrow">      ↓</div>
+      <div><span class="flow-highlight">보아스가 율법의 문자를 넘어 율법의 정신을 자발적으로 결합·이행</span></div>
+    </div>
+
+    <p>
+      이 결혼의 진짜 동력은 율법 조항이 아닙니다. 바로 <strong>헤세드(<span class="hebrew">חֶסֶד</span>)</strong>입니다. 헤세드는 언약 관계 안에서 의무를 넘어서는 사랑, 신실함, 인자를 뜻합니다. 룻기에서 이 단어는 세 번 등장합니다.
+    </p>
+
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>본문</th>
+            <th>대상</th>
+            <th>헤세드의 내용</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1:8</td>
+            <td>룻과 오르바</td>
+            <td>죽은 남편들과 시어머니에게 베푼 사랑</td>
+          </tr>
+          <tr>
+            <td>2:20</td>
+            <td>보아스</td>
+            <td>산 자와 죽은 자에게 헤세드를 버리지 않은 자</td>
+          </tr>
+          <tr>
+            <td>3:10</td>
+            <td>룻</td>
+            <td>더 나은 선택을 포기하고 보아스를 택한 사랑</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="theology-box">
+      <blockquote>
+        "율법은 더 가까운 친족의 편이었고,<br>
+        손해 계산도 그의 편이었다.<br>
+        그럼에도 보아스가 나섰다.<br>
+        이것이 헤세드이고, 이것이 복음의 구조다."
+      </blockquote>
+      <div class="attribution">룻기 신학 정리</div>
+    </div>
+  </section>
+
+  <!-- Q4 -->
+  <section class="section" id="q4">
+    <div class="section-header">
+      <div class="section-num">04</div>
+      <div class="section-title-group">
+        <div class="question-label">Question 4 — 오류 수정</div>
+        <h2>더 가까운 친족의 거절 이유: 정확한 구조</h2>
+      </div>
+    </div>
+
+    <div class="question-block">
+      "고엘 의무는 이행하겠지만, 룻과의 결혼까지는 못하겠다"는 표현이 합당한가? 근거를 더 명확하게.
+    </div>
+
+    <p>
+      앞선 대답에서 이런 서술이 있었습니다.
+    </p>
+
+    <div class="scripture" style="border-left-color:var(--red);color:#c08070;">
+      "더 가까운 친족이 거절한 이유를 보세요. '내 기업에 해가 될까 두렵다'(룻 4:6). 그는 손해 계산을 했습니다. <strong>고엘 의무는 이행하겠지만, 룻과의 결혼까지는 못하겠다는 겁니다.</strong>"
+      <cite>— 앞선 대화에서의 서술</cite>
+    </div>
+
+    <p>
+      이 서술은 부정확합니다. 본문의 순서를 따라가면 문제가 드러납니다.
+    </p>
+
+    <h3 style="font-family:var(--serif);font-size:16px;color:#888;margin:20px 0;">오류 발견 및 수정</h3>
+
+    <div class="correction">
+      <div class="correction-before">
+        <div class="correction-label">❌ 수정 전 (오류)</div>
+        <p>"고엘 의무는 이행하겠지만, 룻과의 결혼까지는 못하겠다."</p>
+      </div>
+      <div class="correction-after">
+        <div class="correction-label">✓ 수정 후 (정확)</div>
+        <p>더 가까운 친족은 토지 구속에 동의했다가, 룻이 조건으로 붙자 <strong>토지 구속 전체를 포기</strong>했다. 결혼만 거절한 게 아니다.</p>
+      </div>
+    </div>
+
+    <h3 style="font-family:var(--serif);font-size:16px;color:#f0e8d8;margin:28px 0 16px;">룻 4장의 정확한 순서</h3>
+
+    <div class="flow">
+      <div><span style="color:#5a7a5a">4:3-4</span> → 보아스가 <span class="flow-highlight">토지 구속만</span> 제안</div>
+      <div style="padding-left:20px">→ 더 가까운 친족: <span class="flow-highlight">"내가 무르리라"</span> (수락)</div>
+      <div style="margin-top:8px"><span style="color:#5a7a5a">4:5</span> → 보아스가 추가 조건: <span class="flow-highlight">"룻도 함께 취해야 한다"</span></div>
+      <div style="margin-top:8px"><span style="color:#5a7a5a">4:6</span> → 더 가까운 친족: <span class="flow-result">"못 하겠다" (패키지 전체 포기)</span></div>
+    </div>
+
+    <h3 style="font-family:var(--serif);font-size:16px;color:#f0e8d8;margin:28px 0 16px;">"내 기업에 해가 된다"의 정확한 의미</h3>
+
+    <p>
+      히브리어 <span class="hebrew">אַשְׁחִית אֶת־נַחֲלָתִי</span> — 직역하면 "내 기업을 망가뜨릴/파괴할 것이다"입니다.
+    </p>
+
+    <div class="flow">
+      <div>그가 밭을 산다</div>
+      <div class="flow-arrow">  +</div>
+      <div>룻에게서 아들이 태어난다</div>
+      <div class="flow-arrow">  ↓</div>
+      <div>그 아들 = 말론의 후계자</div>
+      <div class="flow-arrow">  ↓</div>
+      <div>그 밭은 말론의 아들에게 귀속</div>
+      <div class="flow-arrow">  ↓</div>
+      <div class="flow-result">자기 돈으로 산 땅이 자기 자식에게 안 온다<br>= "내 기업에 해가 된다" → 패키지 전체 거절</div>
+    </div>
+
+    <div class="callout">
+      <div class="callout-label">소수설 (모압 여인 신분 우려)</div>
+      <p>신명기 23:3의 모압인 총회 금지 조항으로 인한 사회적 지위 손상을 우려했다는 해석도 있으나, 보아스 자신도 룻의 이방인 신분을 알면서 개의치 않았다는 본문의 흐름에서 <strong>재산 손실 구조가 훨씬 강한 근거</strong>입니다.</p>
+    </div>
+  </section>
+
+  <!-- Q5 -->
+  <section class="section" id="q5">
+    <div class="section-header">
+      <div class="section-num">05</div>
+      <div class="section-title-group">
+        <div class="question-label">Question 5</div>
+        <h2>룻 4:5 — "룻을 취해야 한다"는 본문 근거가 있는가?</h2>
+      </div>
+    </div>
+
+    <div class="question-block">
+      룻기 4:5에 "룻도 함께 취해야 한다"는 의미가 어디 있나? 영어 성경으로 설명해달라.
+    </div>
+
+    <p>
+      히브리어 원문에는 여기서 유명한 <strong>케티브/케레(Kethiv/Qere) 문제</strong>가 있습니다. 기록된 자음과 읽도록 표기된 모음이 다른 경우입니다.
+    </p>
+
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>구분</th>
+            <th>히브리어</th>
+            <th>의미</th>
+            <th>서사 구조</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>케티브</strong> (기록된 것)</td>
+            <td><span class="hebrew">קָנִיתָ</span></td>
+            <td>"네가 취해야 한다"</td>
+            <td>룻이 조건으로 제시됨</td>
+          </tr>
+          <tr>
+            <td><strong>케레</strong> (읽히는 것)</td>
+            <td><span class="hebrew">קָנִיתִי</span></td>
+            <td>"내가 취하겠다"</td>
+            <td>보아스가 먼저 의사 선언</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3 style="font-family:var(--serif);font-size:16px;color:#f0e8d8;margin:28px 0 16px;">영어 번역본 비교</h3>
+
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>번역본</th>
+            <th>본문 채택</th>
+            <th>룻의 문법적 위치</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>ESV</strong></td>
+            <td>"you also <strong>acquire Ruth</strong>"</td>
+            <td>목적어 (케티브)</td>
+          </tr>
+          <tr>
+            <td><strong>NIV</strong></td>
+            <td>"you also <strong>acquire</strong> Ruth"</td>
+            <td>목적어 (케티브)</td>
+          </tr>
+          <tr>
+            <td><strong>NASB</strong></td>
+            <td>"you must also <strong>acquire</strong> Ruth"</td>
+            <td>목적어 (케티브)</td>
+          </tr>
+          <tr>
+            <td><strong>KJV</strong></td>
+            <td>"buy it also <strong>of Ruth</strong>"</td>
+            <td>출처 (예외적 번역)</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p>
+      주요 영어 번역본은 압도적으로 <strong>케티브를 채택</strong>해 룻을 직접 목적어로 표현합니다. ESV, NASB는 각주에서 케레("I acquire")를 병기합니다. KJV만 "of Ruth"(룻으로부터)라는 예외적 표현을 씁니다.
+    </p>
+  </section>
+
+  <!-- Q6 -->
+  <section class="section" id="q6">
+    <div class="section-header">
+      <div class="section-num">06</div>
+      <div class="section-title-group">
+        <div class="question-label">Question 6</div>
+        <h2>개역한글·개역개정은 왜 이 의미가 불명확한가?</h2>
+      </div>
+    </div>
+
+    <div class="question-block">
+      영어 성경만 봐도 "룻을 취해야 함"이 명확한데, 개역한글·개역개정에는 왜 그 의미가 명확하지 않은가?
+    </div>
+
+    <h3 style="font-family:var(--serif);font-size:16px;color:#f0e8d8;margin:0 0 16px;">번역 비교: 조사 하나의 차이</h3>
+
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>번역</th>
+            <th>표현</th>
+            <th>룻의 문법적 위치</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>히브리어 원문</td>
+            <td>룻<strong>을</strong> 취하다</td>
+            <td style="color:var(--green)">목적어 ✓</td>
+          </tr>
+          <tr>
+            <td>ESV / NIV / NASB</td>
+            <td>acquire <strong>Ruth</strong></td>
+            <td style="color:var(--green)">목적어 ✓</td>
+          </tr>
+          <tr>
+            <td>KJV</td>
+            <td>of <strong>Ruth</strong></td>
+            <td style="color:var(--red)">출처 ✗</td>
+          </tr>
+          <tr>
+            <td>개역한글</td>
+            <td>룻<strong>에게서</strong> 사서</td>
+            <td style="color:var(--red)">출처 ✗</td>
+          </tr>
+          <tr>
+            <td>개역개정</td>
+            <td>룻<strong>에게서도</strong> 사서</td>
+            <td style="color:var(--red)">출처 ✗</td>
+          </tr>
+          <tr>
+            <td>새번역</td>
+            <td>룻<strong>을</strong> 아내로 맞이하여</td>
+            <td style="color:var(--green)">목적어 ✓</td>
+          </tr>
+          <tr>
+            <td>공동번역</td>
+            <td>룻<strong>도</strong> 아내로 맞아들여야</td>
+            <td style="color:var(--green)">목적어 ✓</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3 style="font-family:var(--serif);font-size:16px;color:#f0e8d8;margin:28px 0 16px;">왜 이렇게 됐는가: 세 가지 원인</h3>
+
+    <div class="callout warning">
+      <div class="callout-label">원인 1 — 번역 저본 문제</div>
+      <p>개역한글(1956년)은 히브리어 직접 번역이 아닌 <strong>KJV를 주요 저본</strong>으로 삼았습니다. KJV의 "of Ruth"라는 예외적 번역을 그대로 계승해 "룻에게서"로 옮겼습니다.</p>
+    </div>
+
+    <div class="callout warning">
+      <div class="callout-label">원인 2 — KJV 자체의 이례적 번역</div>
+      <p>주류 영어 번역 중 "of Ruth"를 쓴 것은 <strong>KJV뿐</strong>입니다. NIV, ESV, NASB는 모두 "acquire Ruth"로 번역했습니다. 개역 계열은 주류가 아닌 예외를 계승한 셈입니다.</p>
+    </div>
+
+    <div class="callout">
+      <div class="callout-label">원인 3 — 문화적 완곡 가능성</div>
+      <p>여성을 거래의 <strong>대상(목적어)</strong>으로 표현하는 것에 대한 번역자들의 문화적 불편함이 "룻에게서"라는 완곡한 표현을 선택하게 했을 가능성이 있습니다.</p>
+    </div>
+
+    <div class="callout success">
+      <div class="callout-label">왜 이게 중요한가</div>
+      <p>번역이 흐려지면 <strong>더 가까운 친족이 왜 거절했는지의 논리도 흐려집니다.</strong> 그가 룻을 "취해야 한다"는 조건이 명확해야, 그 조건으로 인한 재산 손실 구조가 선명해지고, 그의 거절 이유가 납득되며, 보아스의 자발적 수락이 더욱 빛납니다.</p>
+    </div>
+  </section>
+
+  <!-- FINAL SUMMARY -->
+  <section class="section" id="summary">
+    <div class="section-header">
+      <div class="section-num">∞</div>
+      <div class="section-title-group">
+        <div class="question-label">신학적 결론</div>
+        <h2>이 모든 것이 가리키는 하나의 방향</h2>
+      </div>
+    </div>
+
+    <div class="flow">
+      <div>율법의 문자 <span class="flow-arrow">→</span> 더 가까운 친족의 편</div>
+      <div>손해 계산   <span class="flow-arrow">→</span> 더 가까운 친족의 편</div>
+      <div>사회적 부담 <span class="flow-arrow">→</span> 더 가까운 친족의 편</div>
+      <div style="margin-top:12px" class="flow-result">그런데 보아스는 나섰다.</div>
+    </div>
+
+    <div class="summary-grid">
+      <div class="summary-card">
+        <h4>고엘 제도</h4>
+        <p>구속할 의무와 권리를 가진 자. 거절 가능한 의무였지만, 보아스는 자원했다.</p>
+      </div>
+      <div class="summary-card">
+        <h4>헤세드</h4>
+        <p>의무를 넘어선 언약적 사랑. 이 결혼의 진짜 동력은 율법이 아니라 헤세드였다.</p>
+      </div>
+      <div class="summary-card">
+        <h4>번역의 문제</h4>
+        <p>개역 계열의 "룻에게서"는 KJV 저본 계승의 결과. 새번역·공동번역이 원문에 가깝다.</p>
+      </div>
+      <div class="summary-card">
+        <h4>오벳의 위치</h4>
+        <p>보아스의 아들. 헤세드가 역사를 움직인다는 하나님의 선언이 족보에 새겨졌다.</p>
+      </div>
+    </div>
+
+    <div class="lineage">
+      <div class="lineage-node">보아스</div>
+      <div class="lineage-arrow">→</div>
+      <div class="lineage-node highlight">오벳</div>
+      <div class="lineage-arrow">→</div>
+      <div class="lineage-node">이새</div>
+      <div class="lineage-arrow">→</div>
+      <div class="lineage-node">다윗</div>
+      <div class="lineage-arrow">→</div>
+      <div class="lineage-node highlight">예수 그리스도</div>
+    </div>
+
+    <div class="theology-box">
+      <blockquote>
+        "보아스가 예수님의 예표인 이유는,<br>
+        율법이 요구하지 않아도 나아왔고,<br>
+        손해를 계산하지 않았으며,<br>
+        이방 여인을 자기 아내로 취했기 때문이다.<br><br>
+        우리도 이방인이었고, 가진 것이 없었고,<br>
+        율법이 우리를 구속할 근거가 없었다.<br>
+        그러나 그분이 헤세드로 나오셨다."
+      </blockquote>
+      <div class="attribution">룻기 강해 종합 결론</div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <p>룻기 4장 · 질문과 대답</p>
+  <p style="margin-top:8px;">히브리어 원문 · 케티브/케레 · 번역 비교 · 고엘 제도 · 헤세드</p>
+</footer>
+
+</body>
+</html>
